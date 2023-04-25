@@ -25,7 +25,7 @@ const response = {
   }),
 };
 
-describe('average values', () => {
+describe('average values controller', () => {
   it("should send a status code of 400 when date is later than today's date", async () => {
     await averagesController(requestDateGreaterThanToday, response);
     expect(response.status).toHaveBeenCalledWith(400);
