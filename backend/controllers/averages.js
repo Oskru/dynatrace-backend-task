@@ -2,7 +2,7 @@ import { validIsoCodes } from '../utils/valid-iso-codes.js';
 
 export async function averagesController(req, res) {
   try {
-    const currencyCode = req.params.currency;
+    const currencyCode = req.params.currency.toUpperCase();
     const date = req.params.date;
 
     // Setting up Date object to compare dates
