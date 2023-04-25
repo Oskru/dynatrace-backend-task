@@ -1,4 +1,4 @@
-import { validIsoCodes } from '../utils/valid-iso-codes';
+import { validIsoCodes } from '../utils/valid-iso-codes.js';
 
 export async function averagesController(req, res) {
   try {
