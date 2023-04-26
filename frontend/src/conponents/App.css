@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap");
+:root {
+  --color-primary: #FFFFFF;
+  --color-background: #0F162D;
+  --color-secondary: #000000;
+  --color-but: #272D42;
+  --color-but-hover:#5A6075;
+}
+
+/* TYPOGRAPHY */
+body {
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.home-page {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+.home-page .header {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.home-page .header__title {
+  margin: unset;
+  margin-top: 50px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.2%;
+  font-weight: 500;
+  text-align: center;
+}
+.home-page .header__body {
+  margin: unset;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+.home-page .form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.home-page .form__endpoint {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.home-page .form__endpoint-text {
+  flex-grow: 1;
+}
+.home-page .form__currency {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.home-page .form__currency-text {
+  flex-grow: 1;
+}
+.home-page .form__date {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.home-page .form__date-text {
+  flex-grow: 1;
+}
+.home-page .form__quotations {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0;
+  font-weight: 500;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.home-page .form__quotations-text {
+  flex-grow: 1;
+}
+.home-page .form__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.home-page .results {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+.home-page .results__endpoint {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0;
+  font-weight: 500;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.home-page .results__endpoint-text {
+  flex-grow: 1;
+}
+.home-page .results__url {
+  display: inline-block;
+  background-color: var(--color-but);
+  border-radius: 10px;
+  padding: 10px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+.home-page .results__response {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.home-page .select {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0;
+  font-weight: 400;
+  width: 150px;
+  margin-left: 50px;
+}
+.home-page .textfield {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0;
+  font-weight: 400;
+  width: 90px;
+  margin-left: 50px;
+}
+.home-page .but {
+  all: unset;
+  border-radius: 10px;
+  border: 2px solid var(--color-primary);
+  min-width: 100px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding: 7px;
+  height: 40px;
+  font-family: "DM Sans", sans-serif;
+  background-color: var(--color-but);
+  color: var(--color-primary);
+  text-align: center;
+  transition: background-color 0.15s;
+}
+.home-page .but:hover {
+  background-color: var(--color-but-hover);
+}
+.home-page .but--disabled {
+  background-color: black;
+}
+.home-page .but--disabled:hover {
+  background-color: black;
+}/*# sourceMappingURL=App.css.map */

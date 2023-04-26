@@ -1,0 +1,27 @@
+@import '../../global-styles/style.scss';
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-but);
+
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.response {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+
+
+  &__title {
+    @include body1;
+  }
+
+  &__body {
+    @include body2;
+  }
+}
