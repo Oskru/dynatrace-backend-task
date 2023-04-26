@@ -94,7 +94,7 @@ The following endpoints are available:
 
 ```
 {
-  "code": "EUR",
+  "code": "JPY",
   "quotations": "140",
   "majorDifference": 0.00069
 }
