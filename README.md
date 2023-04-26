@@ -43,7 +43,15 @@ The following endpoints are available:
   - `currency`: The three-letter code of the currency (e.g. `GBP`, `USD`, `EUR`, note: currency code is not case-sensitive).
   - `date`: The date in the `YYYY-MM-DD` format.
 - Example Request: `http://localhost:8888/api/averages/GBP/2023-01-02`
-- Example Response: `{"code": "GBP", "date": "2023-01-02", "average": 5.2768}`
+- Example Response:
+
+```
+{
+  "code": "GBP",
+  "date": "2023-01-02",
+  "average": 5.2768
+}
+```
 
 ### Maximum and minimum average value for the past N quotations
 
@@ -54,7 +62,16 @@ The following endpoints are available:
   - `currency`: The three-letter code of the currency (e.g. `GBP`, `USD`, `EUR`, note: currency code is not case-sensitive).
   - `quotation`: The number of the last quotations (note: number has to be in range of <1;255>).
 - Example Request: `http://localhost:8888/api/max-min-averages/EUR/185`
-- Example Response (`max` and `min` in response can vary): `{"code": "EUR", "quotations": "185", "max": 4.8711, "min": 4.5887}`
+- Example Response (`max` and `min` in response can vary):
+
+```
+{
+  "code": "EUR",
+  "quotations": "185",
+  "max": 4.8711,
+  "min": 4.5887
+}
+```
 
 ### Major difference of exchange bid and ask rates for the past N quotations
 
@@ -65,4 +82,12 @@ The following endpoints are available:
   - `currency`: The three-letter code of the currency (e.g. `GBP`, `USD`, `EUR`, note: currency code is not case-sensitive).
   - `quotation`: The number of the last quotations (note: number has to be in range of <1;255>).
 - Example Request: `http://localhost:8888/api/major-differences/JPY/140`
-- Example Response (`majorDifference` in response can vary): `{"code": "EUR", "quotations": "140", "majorDifference": 0.00069}`
+- Example Response (`majorDifference` in response can vary):
+
+```
+{
+  "code": "EUR",
+  "quotations": "140",
+  "majorDifference": 0.00069
+}
+```
