@@ -2,6 +2,8 @@ import { validIsoCodes } from '../utils/valid-iso-codes.js';
 
 export async function maxMinAveragesController(req, res) {
   try {
+    res.header('Access-Control-Allow-Origin', '*'); // Fix CORS
+
     const currencyCode = req.params.currency.toUpperCase();
     const quotation = req.params.quotation;
     // Validation
