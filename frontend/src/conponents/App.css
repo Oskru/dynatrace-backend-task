@@ -141,7 +141,7 @@ body {
   display: inline-block;
   background-color: var(--color-but);
   border-radius: 10px;
-  padding: 10px;
+  padding: 10px 20px;
   font-family: "DM Sans", sans-serif;
   font-size: 14px;
   line-height: 22px;

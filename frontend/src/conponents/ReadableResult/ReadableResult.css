@@ -22,6 +22,7 @@
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
+  padding: 10px;
 }
 .response__title {
   font-family: "DM Sans", sans-serif;

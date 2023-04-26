@@ -61,10 +61,8 @@ function ReadableResult(props) {
           <div className="response__body">{props.result.code}</div>
         </div>
         <div className="response">
-          <div className="response__quotation-title">Quotations</div>
-          <div className="response__quotation-body">
-            {props.result.quotations}
-          </div>
+          <div className="response__title">Quotations</div>
+          <div className="response__body">{props.result.quotations}</div>
         </div>
         <div className="response">
           <div className="response__title">Major difference</div>

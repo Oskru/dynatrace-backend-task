@@ -117,7 +117,7 @@ body {
       display: inline-block;
       background-color: var(--color-but);
       border-radius: 10px;
-      padding: 10px;
+      padding: 10px 20px;
       @include body2;
     }
     &__response {
