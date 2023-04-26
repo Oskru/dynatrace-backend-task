@@ -2,6 +2,14 @@
 
 This project is an Express.js + React app that fetches data from the National Polish Bank (NBP), creates its own API for some of the endpoints, and serves the data as middleware.
 
+## Tools used to build
+
+- Node.js
+- Express.js
+- React.js
+- Jest
+- Docker
+
 ## Requirements
 
 - Docker
