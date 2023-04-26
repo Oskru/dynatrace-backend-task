@@ -13,5 +13,5 @@ app.use('/api/max-min-averages', maxMinAveragesRoutes);
 app.use('/api/major-differences', majorDifferencesRoutes);
 
 // Launch server
-const port = 8000;
+const port = 8888;
 app.listen(port, () => console.log(`Listening on port ${port}...`));

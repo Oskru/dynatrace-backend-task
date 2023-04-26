@@ -10,9 +10,11 @@ function App() {
   const [result, setResult] = useState(null);
   const [url, setUrl] = useState('');
   const [error, setError] = useState('');
-  let averagesURL = `http://localhost:8000/api/averages/${currency}/${date}`;
-  let maxMinAveragesURL = `http://localhost:8000/api/max-min-averages/${currency}/${quotation}`;
-  let majorDifferencesURL = `http://localhost:8000/api/major-differences/${currency}/${quotation}`;
+
+  const serverPort = 8888;
+  let averagesURL = `http://localhost:${serverPort}/api/averages/${currency}/${date}`;
+  let maxMinAveragesURL = `http://localhost:${serverPort}/api/max-min-averages/${currency}/${quotation}`;
+  let majorDifferencesURL = `http://localhost:${serverPort}/api/major-differences/${currency}/${quotation}`;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
