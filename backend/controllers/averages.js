@@ -43,7 +43,14 @@ export async function averagesController(req, res) {
       average: average,
     });
   } catch (error) {
-    res.status(500);
-    res.send({ message: `Internal server error: ${error.message}` });
+    if (error instanceof SyntaxError) {
+      res.status(404);
+      res.send({
+        message: `No data for given currency code / date (date can't be pointing to holidays / weekends)`,
+      });
+    } else {
+      res.status(500);
+      res.send({ message: `Internal server error: ${error.message}` });
+    }
   }
 }
