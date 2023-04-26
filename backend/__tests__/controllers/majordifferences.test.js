@@ -22,6 +22,9 @@ const response = {
   send: jest.fn((x) => {
     x;
   }),
+  header: jest.fn((x) => {
+    x;
+  }),
 };
 
 describe('major value difference controller', () => {
