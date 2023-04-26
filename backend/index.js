@@ -9,7 +9,7 @@ app.use(express.json());
 
 // Routes
 app.use('/api/averages', averagesRoutes);
-app.use('/api/maxminaverages', maxMinAveragesRoutes);
+app.use('/api/max-min-averages', maxMinAveragesRoutes);
 app.use('/api/major-differences', majorDifferencesRoutes);
 
 // Launch server
