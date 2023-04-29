@@ -15,14 +15,14 @@ This project is an Express.js + React app that fetches data from the National Po
 
 - Docker
 
-## Installation
+## Installation and starting the server
 
 1. Clone this repository using `git clone`
 2. Navigate to the project directory.
 
 ## Starting the Server
 
-To start the server, navigate to the project directory and run the following command:
+To start the server run Docker and the following command:
 
 ```
 docker-compose up
@@ -32,7 +32,7 @@ This will start the server on `http://localhost:3000` for the front-end (React e
 
 ## Running tests
 
-To run the test, navigate to the `/backend` directory and run the following command:
+To run the test, navigate to the `./backend` directory and run the following command:
 
 ```
 npm test
@@ -42,7 +42,10 @@ npm test
 
 The following endpoints are available:
 
-### Average
+<details>
+<summary>
+<b>Average</b>
+</summary>
 
 - Endpoint: `/api/averages/:currency/:date`
 - Method: `GET`
@@ -61,8 +64,12 @@ The following endpoints are available:
 }
 ```
 
-### Maximum and minimum average value for the past N quotations
+</details>
 
+<details>
+<summary>
+<b>Maximum and minimum average value for the past N quotations</b>
+</summary>
 - Endpoint: `/api/max-min-differences/:currency/:quotation`
 - Method: `GET`
 - Description: Retrieves the maximum and minimum average exchange rate for a specific currency for the specific number of the last quotations from the NBP API.
@@ -81,8 +88,11 @@ The following endpoints are available:
 }
 ```
 
-### Major difference of exchange bid and ask rates for the past N quotations
-
+</details>
+<details>
+<summary>
+<b>Major difference of exchange bid and ask rates for the past N quotations</b>
+</summary>
 - Endpoint: `/api/major-differences/:currency/:quotation`
 - Method: `GET`
 - Description: Retrieves the one-day major difference in exchange bid and ask rates for a specific currency for the specific number of the last quotations from the NBP API.
@@ -99,3 +109,30 @@ The following endpoints are available:
   "majorDifference": 0.00069
 }
 ```
+
+</details>
+
+## React.js UI
+
+<a href="#starting-the-server">Run the app</a> and navigate in browser to `http://localhost:3000` to explore the endpoint tester UI
+
+<details>
+<summary>
+<b>Screenshots of the UI</b>
+</summary>
+<br>
+
+- Defaultly initialized app
+  <img src="https://user-images.githubusercontent.com/78699146/235326741-4a845f87-3cf9-4a64-a500-f3de2bdadaaa.png" width="600px" height="auto" />
+  <br>
+- Average endpoint `http://localhost:8888/api/averages/JPY/2022-10-28` response
+  <img src="https://user-images.githubusercontent.com/78699146/235326822-7e856c17-9ac1-456b-a958-abfcb8424ded.png" width="600px" height="auto" />
+  <br>
+- Maximum and mininum endpoint `http://localhost:8888/api/max-min-averages/JPY/255` response
+  <img src="https://user-images.githubusercontent.com/78699146/235326898-ca6208db-3f1e-431c-9da4-dc6a6ba68a18.png" width="600px" height="auto" />
+  <br>
+- Major difference endpoint `http://localhost:8888/api/major-differences/GBP/150` response
+  <img src="https://user-images.githubusercontent.com/78699146/235326919-8970c9a3-3319-4c6c-921e-795f319c48ad.png" width="600px" height="auto" />
+  <br>
+- Invalid request error
+  <img src="https://user-images.githubusercontent.com/78699146/235327132-83f47752-304e-4dad-9ed1-64a99b981bdc.png" width="600px" height="auto" />
