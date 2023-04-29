@@ -7,13 +7,13 @@ This project is an Express.js + React app that fetches data from the National Po
 - Node.js
 - Express.js
 - React.js
+- SASS
 - Jest
 - Docker
 
 ## Requirements
 
 - Docker
-- docker-compose
 
 ## Installation
 
