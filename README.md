@@ -121,17 +121,17 @@ The following endpoints are available:
 <b>Screenshots of the UI</b>
 </summary>
 
-- Defaultly initialized app
+- Defaultly initialized app <br>
   <img src="https://user-images.githubusercontent.com/78699146/235326741-4a845f87-3cf9-4a64-a500-f3de2bdadaaa.png" width="600px" height="auto" />
   <br>
-- Average endpoint `http://localhost:8888/api/averages/JPY/2022-10-28` response
+- Average endpoint `http://localhost:8888/api/averages/JPY/2022-10-28` response <br>
   <img src="https://user-images.githubusercontent.com/78699146/235326822-7e856c17-9ac1-456b-a958-abfcb8424ded.png" width="600px" height="auto" />
   <br>
-- Maximum and mininum endpoint `http://localhost:8888/api/max-min-averages/JPY/255` response
+- Maximum and mininum endpoint `http://localhost:8888/api/max-min-averages/JPY/255` response <br>
   <img src="https://user-images.githubusercontent.com/78699146/235326898-ca6208db-3f1e-431c-9da4-dc6a6ba68a18.png" width="600px" height="auto" />
   <br>
-- Major difference endpoint `http://localhost:8888/api/major-differences/GBP/150` response
+- Major difference endpoint `http://localhost:8888/api/major-differences/GBP/150` response <br>
   <img src="https://user-images.githubusercontent.com/78699146/235326919-8970c9a3-3319-4c6c-921e-795f319c48ad.png" width="600px" height="auto" />
   <br>
-- Invalid request error
+- Invalid request error <br>
   <img src="https://user-images.githubusercontent.com/78699146/235327132-83f47752-304e-4dad-9ed1-64a99b981bdc.png" width="600px" height="auto" />
