@@ -120,7 +120,6 @@ The following endpoints are available:
 <summary>
 <b>Screenshots of the UI</b>
 </summary>
-<br>
 
 - Defaultly initialized app
   <img src="https://user-images.githubusercontent.com/78699146/235326741-4a845f87-3cf9-4a64-a500-f3de2bdadaaa.png" width="600px" height="auto" />
